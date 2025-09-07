@@ -93,3 +93,21 @@ El proyecto se estructura de la siguiente manera:
 - `reviews-container`
 - `close-reviews-modal`
 - `reviews-list`
+- `PrecioActual`
+- `disponible`
+
+## Cambios Recientes
+
+### 1. Envío del Precio a Telegram
+- Se ha añadido el `id="PrecioActual"` al elemento que muestra el precio del producto en `index.html`.
+- El archivo `script.js` ha sido modificado para capturar el valor del precio desde este nuevo ID.
+- El valor del precio ahora se envía junto con los demás datos del formulario a la función de Netlify.
+- La función `send-telegram.js` ha sido actualizada para incluir el precio dinámico en el mensaje de notificación de Telegram, reemplazando el valor estático anterior.
+
+### 2. Contador de Stock Dinámico
+- Se ha añadido el `id="disponible"` al elemento que muestra las unidades en stock en `index.html`.
+- El valor inicial del stock se ha establecido en 13.
+- Se ha implementado una nueva lógica en `script.js` que utiliza `localStorage` para gestionar el contador de stock:
+    - El stock disminuye en 1 cada vez que un usuario visita la página.
+    - Cuando el stock llega a 1, el mensaje cambia a "Pronto Surtiremos" junto con un emoticón.
+    - Si el stock es 0 o menor, se reinicia a 20 en la siguiente visita.

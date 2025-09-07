@@ -42,7 +42,7 @@ exports.handler = async (event) => {
       - **Ciudad:** ${data.ciudad}
       - **Dirección:** ${data.direccion}
       -----------------------------------
-      💰 **Total:** $75.000 (Pago Contra Entrega)
+      💰 **Total:** ${data.precio} (Pago Contra Entrega)
     `;
 
     const telegramApiUrl = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;

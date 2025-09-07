@@ -1,4 +1,4 @@
-            let slideIndex = 0;
+let slideIndex = 0;
             const track = document.querySelector('.carousel-track');
             const slides = Array.from(track.children);
             const slideWidth = slides[0].getBoundingClientRect().width;
@@ -257,7 +257,9 @@
                 const formData = new FormData(form);
                 const data = Object.fromEntries(formData.entries());
                 const productTitle = document.getElementById('product-title').textContent;
+                const precioActual = document.getElementById('PrecioActual').textContent.split(' ')[0];
                 data.productTitle = productTitle;
+                data.precio = precioActual;
 
                 try {
                     const response = await fetch('/.netlify/functions/send-telegram', {
@@ -286,3 +288,27 @@
                     submitButton.textContent = 'Finalizar Compra';
                 }
             });
+
+            // --- Stock Countdown Logic ---
+            const stockElement = document.getElementById('disponible');
+            let savedStock = localStorage.getItem('stock');
+            let newStock;
+
+            if (savedStock === null) {
+                newStock = 13;
+            } else {
+                let savedStockValue = parseInt(savedStock, 10);
+                if (savedStockValue <= 0) {
+                    newStock = 20;
+                } else {
+                    newStock = savedStockValue - 1;
+                }
+            }
+
+            if (newStock === 1) {
+                stockElement.innerHTML = `Pronto Surtiremos <i class="fa-solid fa-face-smile-wink" style="color: yellow;"></i>`;
+            } else {
+                stockElement.innerHTML = `¡Quedan ${newStock} unidades en stock!`;
+            }
+
+            localStorage.setItem('stock', newStock);
