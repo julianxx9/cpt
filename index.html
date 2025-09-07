@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Producto - Lumora Mall</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <span class="icon"></span>
+        <a href="#" class="logo"><img src="LumoraMallLogo.svg" alt="Lumora Mall Logo"> Lumora Mall</a>
+        <span class="icon"></span>
+    </header>
+
+    <main class="container">
+        <section class="carousel">
+            <div class="carousel-container" style="position: relative; overflow: hidden;">
+                <div class="carousel-track">
+                    <div class="carousel-slide">
+                        <img src="multimedia/cep.webp" alt="Combo Embutidora + Picadora" style="width:100%; border-radius: 15px;">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="multimedia/me.webp" alt="Maquina de Embutidos" style="width:100%; border-radius: 15px;">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="multimedia/pa.webp" alt="Picadora de Ajos" style="width:100%; border-radius: 15px;">
+                    </div>
+                </div>
+                 <a class="prev" onclick="prevSlide()">&#10094;</a>
+                 <a class="next" onclick="nextSlide()">&#10095;</a>
+            </div>
+            <div style="text-align:center; margin-top: 8px;">
+                <span class="dot" onclick="showSlide(0)"></span>
+                <span class="dot" onclick="showSlide(1)"></span>
+                <span class="dot" onclick="showSlide(2)"></span>
+            </div>
+        </section>
+
+        <section class="product-info">
+            <h1 class="product-title" id="product-title">Combo Embutidora + Trituradora de ajos</h1>
+            <div class="reviews-summary">
+                <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                <span>(132 reseñas)</span>
+            </div>
+
+            <div class="price-box">
+                <div class="old-price">$155.000</div>
+                <div class="current-price">$87.500 <span class="discount">(-44%)</span></div>
+                <div class="offer-countdown" id="countdown-timer"><i class="fa-solid fa-fire-flame-curved"></i> ¡Oferta termina en 02:15:48!</div>
+            </div>
+
+            <ul class="key-benefits" id="beneficios">
+                <li><i class="fa-solid fa-square-check checklist-icon"></i> <b>Incluye:</b> 1 Embutidora casera + 1 Trituradora de ajos.</li>
+                <li><i class="fa-solid fa-square-check checklist-icon"></i> <b>Garantía:</b> Sí, por defectos de fábrica.</li>
+                <li><i class="fa-solid fa-square-check checklist-icon"></i> <b>Uso recomendado:</b> Cocina casera, elaboración de embutidos, preparación rápida de ajo.</li>
+            </ul>
+        </section>
+
+        <section class="trust-section">
+            <div class="trust-badges">
+                <div class="badge"><i class="fa-solid fa-lock"></i> Pago Seguro</div>
+                <div class="badge"><i class="fa-solid fa-truck"></i> Envío Rápido</div>
+            </div>
+            <div class="social-proof">
+                <p><i class="fa-solid fa-eye"></i> <span id="people-watching">28</span> personas viendo este producto</p>
+                <p><i class="fa-solid fa-fire-flame-curved"></i> ¡Quedan 9 unidades en stock!</p>
+            </div>
+        </section>
+
+        <section class="accordion-section">
+            <section class="description-section" style="padding: var(--spacing-large) 0;">
+                <h2 style="font-family: var(--font-primary); font-size: var(--fs-h2); line-height: 1.2; color: var(--text-headings); margin-bottom: var(--spacing-medium);">Descripción</h2>
+                
+                <h3>Embutidora Casera de Salchichas</h3>
+                <p>Con su amplio puerto de alimentación podrás procesar hasta 500 g de carne en una sola carga, ahorrando tiempo y evitando recargas constantes. Además, incluye 4 tubos de llenado (1,4 cm, 1,8 cm, 2,2 cm y 2,6 cm) para preparar diferentes tipos de salchichas a tu gusto.</p>
+                <video src="multimedia/eb01.webm" autoplay loop muted playsinline style="width: 100%; border-radius: var(--radius-medium); margin-top: var(--spacing-medium);"></video>
+                <p><i class="fa-solid fa-square-check checklist-icon"></i> Ideal para amantes de la cocina casera<br>
+                <i class="fa-solid fa-square-check checklist-icon"></i> Perfecta para embutidos artesanales<br>
+                <i class="fa-solid fa-square-check checklist-icon"></i> Práctica, duradera y segura</p>
+                <video src="multimedia/eb.webm" autoplay loop muted playsinline style="width: 100%; border-radius: var(--radius-medium); margin-top: var(--spacing-medium);"></video>
+
+                <h3>Trituradora / Prensador de Ajos</h3>
+                <p>Fabricado con PP y acero inoxidable, combina resistencia, calidad y durabilidad, garantizando un producto que te acompañará por mucho tiempo en tu cocina. Además, es fácil de limpiar y no retiene olores, lo que lo convierte en una herramienta práctica y esencial para todos los días.</p>
+                <video src="multimedia/ta.webm" autoplay loop muted playsinline style="width: 100%; border-radius: var(--radius-medium); margin-top: var(--spacing-medium);"></video>
+                <p><i class="fa-solid fa-square-check checklist-icon"></i> Tritura aja obtener mezcla homogénea.</p>
+                <ul>
+                    <ul>
+                    <li><i class="fa-solid fa-square-check checklist-icon"></i> Limpieza: fácil de enjuagar, no retiene olores.</li>
+                    <li><i class="fa-solid fa-square-check checklist-icon"></i> Dimensiones aproximadas: 19 cm x 5 cm.</li>
+                    <li><i class="fa-solid fa-square-check checklist-icon"></i> Peso aproximado: 150 g.</li>
+                </ul>
+                </ul>
+            </section>
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <span>Especificaciones Técnicas</span>
+                    <span>+</span>
+                </button>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <h3>Embutidora Casera</h3>
+                        <ul class="no-marker">
+                            <li><b>Materiales:</b> PP y PS de grado alimenticio (atóxicos, inodoros e inocuos).</li>
+                            <li><b>Capacidad de carga:</b> hasta 500 g de carne por uso.</li>
+                            <li><b>Tubos de llenado incluidos:</b> 4 tamaños (1,4 cm – 1,8 cm – 2,2 cm – 2,6 cm).</li>
+                            <li><b>Sistema de montaje:</b> a presión, desmontable.</li>
+                            <li><b>Limpieza:</b> piezas extraíbles y lavables.</li>
+                            <li><b>Dimensiones aproximadas:</b> 25 cm x 10 cm.</li>
+                            <li><b>Peso aproximado:</b> 450 g.</li>
+                        </ul>
+                        <h3>Trituradora / Prensador de Ajos</h3>
+                        <ul class="no-marker">
+                            <li><b>Materiales:</b> Acero inoxidable + PP.</li>
+                            <li><b>Diseño:</b> ergonómico y manual.</li>
+                            <li><b>Función principal:</b> triturar ajo para obtener mezcla homogénea.</li>
+                            <li><b>Limpieza:</b> fácil de enjuagar, no retiene olores.</li>
+                            <li><b>Dimensiones aproximadas:</b> 19 cm x 5 cm.</li>
+                            <li><strong>Peso aproximado</strong>: 150 g.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="customer-reviews">
+            <h2>Opiniones de Clientes</h2>
+            <div class="review-card">
+                <div class="reviews-summary"><span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span></div>
+                <p>"Excelente producto! Me entretengo en la cocina, la calidad de sonido es increíble. Lo recomiendo."</p>
+                <p class="author">- María G.</p>
+            </div>
+            <a class="view-all-reviews" id="view-all-reviews-link">Ver todas las 132 reseñas</a>
+        </section>
+        
+        <section class="accordion-section">
+             <h2>Preguntas Frecuentes (FAQ)</h2>
+             <div class="accordion-item">
+                <button class="accordion-header"><span>¿Cuánto tarda el envío?</span><span>+</span></button>
+                <div class="accordion-content"><div class="accordion-content-inner"><p>El envío tarda de 2 a 5 días hábiles dependiendo de tu ciudad.</p></div></div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header"><span>¿Tiene garantía?</span><span>+</span></button>
+                <div class="accordion-content"><div class="accordion-content-inner"><p>Sí, todos nuestros productos tienen una garantía de 10 dias por defectos de fábrica.</p></div></div>
+            </div>
+        </section>
+
+        <section class="whatsapp-contact">
+            <a href="https://wa.link/r3ipcc" class="whatsapp-button" target="_blank">
+                <i class="fa-brands fa-square-whatsapp"></i> Contacto
+            </a>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-logo">
+            <img src="LumoraMallLogo.svg" alt="Lumora Mall Logo">
+        </div>
+        <p>© 2025 Lumora Mall</p>
+        <div class="footer-links">
+            <a href="politica.html">Política de Privacidad</a>
+            <a href="terminos.html">Términos</a>
+        </div>
+    </footer>
+
+    <div class="sticky-cta-container">
+        <button class="cta-button" id="buy-button"><i class="fa-solid fa-shop"></i> COMPRAR</button>
+    </div>
+
+    <!-- Checkout Form Modal -->
+    <div class="modal" id="checkout-modal">
+        <div class="modal-container" id="form-container">
+            <button class="close-modal-btn" id="close-checkout-modal">&times;</button>
+            <h2>Completa tu Compra</h2>
+            <form id="checkout-form">
+                <div class="form-group">
+                    <label for="nombres">Nombres</label>
+                    <input type="text" id="nombres" name="nombres" required>
+                    <div class="error-message" id="nombres-error">Solo se permiten letras y espacios.</div>
+                </div>
+                <div class="form-group">
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" id="apellidos" name="apellidos" required>
+                    <div class="error-message" id="apellidos-error">Solo se permiten letras y espacios.</div>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Número de teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                    <div class="error-message" id="telefono-error">Solo se permiten números.</div>
+                </div>
+                <div class="form-group">
+                    <label for="departamento">Departamento</label>
+                    <select id="departamento" name="departamento" required>
+                        <option value="">Selecciona un departamento...</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="ciudad">Ciudad</label>
+                    <select id="ciudad" name="ciudad" required disabled>
+                        <option value="">Selecciona una ciudad...</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="direccion">Dirección</label>
+                    <input type="text" id="direccion" name="direccion" required>
+                </div>
+                <div class="payment-method-info">
+                    <p><i class="fa-solid fa-truck"></i> Método de pago: <strong>Pago contra entrega</strong></p>
+                </div>
+                <button type="submit" class="cta-button">Finalizar Compra</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- All Reviews Modal -->
+    <div class="modal" id="reviews-modal">
+        <div class="modal-container" id="reviews-container">
+            <button class="close-modal-btn" id="close-reviews-modal">&times;</button>
+            <h2>Todas las Reseñas</h2>
+            <div id="reviews-list">
+                <!-- Reviews will be injected here by JS -->
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js" defer></script>
+</body>
+</html>
