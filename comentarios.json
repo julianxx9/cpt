@@ -1,0 +1,82 @@
+{
+  "reviews": [
+    {
+      "id": 1,
+      "username": "Javier G.",
+      "rating": 5,
+      "date": "2025-04-11",
+      "comment": "¡Increíble! La trituradora de ajos es rapidísima y la embutidora manual funciona perfecto. Me ahorró un montón de tiempo en la cocina. El combo es de muy alta calidad, justo lo que necesitaba.",
+      "helpful_count": 0,
+      "verified_purchase": true,
+      "product_variant": {
+        "type": "Kit",
+        "value": "Trituradora y Embutidora"
+      }
+    },
+    {
+      "id": 2,
+      "username": "Lucía M.",
+      "rating": 4,
+      "date": "2025-06-28",
+      "comment": "Coincide con la descripción del producto, buena calidad de los materiales. El embalaje llegó en perfectas condiciones.",
+      "helpful_count": 0,
+      "verified_purchase": true,
+      "product_variant": {
+        "type": "Kit",
+        "value": "Trituradora y Embutidora"
+      }
+    },
+    {
+      "id": 3,
+      "username": "Ricardo P.",
+      "rating": 3,
+      "date": "2025-03-29",
+      "comment": "La trituradora de ajos es eficiente, pero la embutidora manual podría tener una sujeción más fuerte, a veces se mueve un poco. Aun así, el kit es bueno y cumple su función.",
+      "helpful_count": 0,
+      "verified_purchase": true,
+      "product_variant": {
+        "type": "Kit",
+        "value": "Trituradora y Embutidora"
+      }
+    },
+    {
+      "id": 4,
+      "username": "Sofía A.",
+      "rating": 5,
+      "date": "2025-07-04",
+      "comment": "Excelente, me permite preparar los ingredientes para mis recetas más rápido y hacer salchichas caseras al mismo tiempo.",
+      "helpful_count": 0,
+      "verified_purchase": true,
+      "product_variant": {
+        "type": "Kit",
+        "value": "Trituradora y Embutidora"
+      }
+    },
+    {
+      "id": 5,
+      "username": "Carlos H.",
+      "rating": 5,
+      "date": "2025-03-12",
+      "comment": "Me encanta este set.",
+      "helpful_count": 1,
+      "verified_purchase": true,
+      "product_variant": {
+        "type": "Kit",
+        "value": "Trituradora y Embutidora"
+      }
+    },
+    {
+      "id": 6,
+      "username": "Comprador de México",
+      "rating": 4,
+      "date": null,
+      "comment": "El único detalle es que el manual no venía en español, tuve que buscar una traducción en línea para entender cómo usar la embutidora manual, pero el producto es excelente y el precio es muy bueno.",
+      "helpful_count": null,
+      "verified_purchase": true,
+      "product_variant": {
+        "type": "Kit",
+        "value": "Trituradora y Embutidora"
+      }
+    }
+  ]
+}
